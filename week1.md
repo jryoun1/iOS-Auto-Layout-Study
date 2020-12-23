@@ -1,1 +1,1 @@
-week1 프로젝트입니다.
+week1-lasagna 프로젝트입니다.
