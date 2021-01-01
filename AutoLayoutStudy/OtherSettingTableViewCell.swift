@@ -41,6 +41,10 @@ final class OtherSettingTableViewCell: UITableViewCell {
         ])
     }
     
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
     func setLabel(data: String) {
         self.settingTitle.text = data
     }
