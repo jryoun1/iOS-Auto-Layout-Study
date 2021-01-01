@@ -62,8 +62,8 @@ final class PersonInfoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setLabel(data: [String]) {
-        self.personInfoTitle.text = data[0]
-        self.personInfoSubtitle.text = data[1]
+    func setLabel(data: String) {
+        self.personInfoTitle.text = data
+        self.personInfoSubtitle.text = "Set up iCloud, the App Store, and more."
     }
 }
