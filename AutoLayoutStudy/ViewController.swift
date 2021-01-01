@@ -21,6 +21,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         settingTableView.dataSource = self
+        settingTableView.delegate = self
     }
 }
 
@@ -70,5 +71,9 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        settingTableView.deselectRow(at: indexPath, animated: true)
+    }
+}
 
