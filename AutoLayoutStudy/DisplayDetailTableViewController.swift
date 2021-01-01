@@ -12,7 +12,12 @@ class DisplayDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpViewTitle()
+    }
+    
+    func setUpViewTitle() {
         navigationItem.title = displayDetailViewTitle
+        navigationItem.largeTitleDisplayMode = .never
     }
 
     // MARK: - Table view data source

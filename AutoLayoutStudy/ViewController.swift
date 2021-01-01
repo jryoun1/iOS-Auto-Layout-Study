@@ -22,7 +22,13 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         settingTableView.dataSource = self
         settingTableView.delegate = self
+        setUpViewTitle()
         setUpSearchBar()
+    }
+    
+    func setUpViewTitle() {
+        navigationItem.title = "Setting"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
