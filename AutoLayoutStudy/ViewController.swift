@@ -22,6 +22,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         settingTableView.dataSource = self
         settingTableView.delegate = self
+        setUpSearchBar()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -87,3 +88,14 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
+extension ViewController {
+    func setUpSearchBar() {
+        let searchBarController = UISearchController(searchResultsController: nil)
+        searchBarController.hidesNavigationBarDuringPresentation = true
+        searchBarController.obscuresBackgroundDuringPresentation = true
+        navigationItem.hidesSearchBarWhenScrolling = true
+        
+        searchBarController.searchBar.placeholder = "검색"
+        navigationItem.searchController = searchBarController
+    }
+}
