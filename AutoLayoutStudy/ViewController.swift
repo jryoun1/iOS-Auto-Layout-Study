@@ -23,6 +23,16 @@ final class ViewController: UIViewController {
         settingTableView.dataSource = self
         settingTableView.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let displayDetailTableViewController = segue.destination as? DisplayDetailTableViewController else {
+            return
+        }
+        guard let cell = sender as? OtherSettingTableViewCell else {
+            return
+        }
+        displayDetailTableViewController.displayDetailViewTitle = cell.settingTitle.text
+    }
 }
 
 extension ViewController: UITableViewDataSource {
