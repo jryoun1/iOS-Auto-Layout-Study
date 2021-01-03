@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct MockupData {
+    static let settingItems: [[String : String]] = [
+        
+    ]
+}
