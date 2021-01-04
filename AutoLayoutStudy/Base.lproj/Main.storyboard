@@ -786,6 +786,84 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="밝기" footerTitle="iPhone 디스플레이를 주변광에 맞춰 색상이 다른 환경에서도 일관적으로 보이도록 자동으로 조정합니다." id="CHT-5A-06K">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="lWM-5E-oDI">
+                                        <rect key="frame" x="0.0" y="444" width="390" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lWM-5E-oDI" id="4Hn-Wb-hbo">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b9Q-TP-hsX">
+                                                    <rect key="frame" x="69" y="8" width="260" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="b9Q-TP-hsX" secondAttribute="height" multiplier="256:29" id="Zhn-8e-k1c"/>
+                                                    </constraints>
+                                                </slider>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.min.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pb6-OK-cri">
+                                                    <rect key="frame" x="19.999999999999996" y="4" width="37.666666666666657" height="37"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="pb6-OK-cri" secondAttribute="height" multiplier="37:38" id="VHG-nt-sZL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZZG-gk-xfJ">
+                                                    <rect key="frame" x="346" y="4" width="37" height="37"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ZZG-gk-xfJ" secondAttribute="height" multiplier="1:1" id="ARI-0y-zwi"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZZG-gk-xfJ" firstAttribute="leading" secondItem="b9Q-TP-hsX" secondAttribute="trailing" constant="19" id="B9x-YC-5ht"/>
+                                                <constraint firstItem="b9Q-TP-hsX" firstAttribute="leading" secondItem="pb6-OK-cri" secondAttribute="trailing" constant="13.33" id="FMF-Ip-eNf"/>
+                                                <constraint firstItem="pb6-OK-cri" firstAttribute="top" secondItem="4Hn-Wb-hbo" secondAttribute="top" constant="3" id="M7b-Ka-BrM"/>
+                                                <constraint firstItem="pb6-OK-cri" firstAttribute="leading" secondItem="4Hn-Wb-hbo" secondAttribute="leading" constant="20" symbolic="YES" id="QCA-5o-gO5"/>
+                                                <constraint firstAttribute="bottom" secondItem="pb6-OK-cri" secondAttribute="bottom" constant="3.3300000000000001" id="RfM-D5-P4E"/>
+                                                <constraint firstItem="ZZG-gk-xfJ" firstAttribute="top" secondItem="4Hn-Wb-hbo" secondAttribute="top" constant="4" id="TWe-EC-R70"/>
+                                                <constraint firstAttribute="bottom" secondItem="b9Q-TP-hsX" secondAttribute="bottom" constant="8" id="b7q-yg-fdR"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZZG-gk-xfJ" secondAttribute="bottom" constant="4" id="c5o-Xz-QcB"/>
+                                                <constraint firstItem="b9Q-TP-hsX" firstAttribute="top" secondItem="4Hn-Wb-hbo" secondAttribute="top" constant="8" id="e60-PG-FCz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5oU-sI-gXZ">
+                                        <rect key="frame" x="0.0" y="489" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5oU-sI-gXZ" id="lZ3-uy-G28">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="True Tone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttp-vz-q0G">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="83.333333333333329" height="21.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ttp-vz-q0G" secondAttribute="height" multiplier="82:21" id="o2z-OI-49x"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26z-Gc-kgh">
+                                                    <rect key="frame" x="336.66666666666669" y="6.9999999999999982" width="33.333333333333314" height="31.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="26z-Gc-kgh" secondAttribute="height" multiplier="1:1" id="tPY-25-4zY"/>
+                                                    </constraints>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="26z-Gc-kgh" firstAttribute="top" secondItem="lZ3-uy-G28" secondAttribute="top" constant="7" id="Bkp-fK-U4Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="26z-Gc-kgh" secondAttribute="trailing" constant="22" id="TGb-DC-dTA"/>
+                                                <constraint firstItem="ttp-vz-q0G" firstAttribute="leading" secondItem="lZ3-uy-G28" secondAttribute="leading" constant="20" symbolic="YES" id="hOF-Is-nLb"/>
+                                                <constraint firstItem="ttp-vz-q0G" firstAttribute="top" secondItem="lZ3-uy-G28" secondAttribute="top" constant="12" id="mZU-wG-KDU"/>
+                                                <constraint firstAttribute="bottom" secondItem="26z-Gc-kgh" secondAttribute="bottom" constant="5.6699999999999999" id="nCQ-5w-6OI"/>
+                                                <constraint firstAttribute="bottom" secondItem="ttp-vz-q0G" secondAttribute="bottom" constant="10.67" id="nYC-ly-2WW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="NvM-Py-ifC" id="nfi-2b-5p7"/>
@@ -839,6 +917,8 @@
         <image name="safari" width="104" height="92"/>
         <image name="shortcuts" width="86" height="92"/>
         <image name="sirisearch" width="88" height="90"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
+        <image name="sun.min.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
