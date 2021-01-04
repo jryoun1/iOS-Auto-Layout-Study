@@ -7,21 +7,10 @@
 
 import UIKit
 
+// TODO: searchBar
 class ViewController: UITableViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 
