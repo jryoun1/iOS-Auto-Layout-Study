@@ -68,4 +68,9 @@ final class DisplayDetailTableViewController: UITableViewController {
             return CGFloat.leastNormalMagnitude
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }
