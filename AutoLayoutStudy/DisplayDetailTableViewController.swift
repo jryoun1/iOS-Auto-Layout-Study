@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DisplayDetailTableViewController: UITableViewController {
+final class DisplayDetailTableViewController: UITableViewController {
     var displayDetailViewTitle: String?
     
     override func viewDidLoad() {
@@ -19,14 +19,30 @@ class DisplayDetailTableViewController: UITableViewController {
         navigationItem.title = displayDetailViewTitle
         navigationItem.largeTitleDisplayMode = .never
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch section {
+        case 0:
+            return 50
+        case 1:
+            return 50
+        case 2:
+            return 20
+        case 5:
+            return 50
+        default:
+            return 30
+        }
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        switch section {
+        case 1:
+            return 50
+        case 5:
+            return 50
+        default:
+            return CGFloat.leastNormalMagnitude
+        }
     }
 }
