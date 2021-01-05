@@ -33,9 +33,9 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up iCloud, the App Store, and more." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCo-db-dur">
-                                                    <rect key="frame" x="94" y="46" width="272" height="18"/>
+                                                    <rect key="frame" x="94" y="38" width="271.66666666666669" height="41"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="CCo-db-dur" secondAttribute="height" multiplier="136:9" id="xec-6R-1Er"/>
+                                                        <constraint firstAttribute="width" secondItem="CCo-db-dur" secondAttribute="height" multiplier="272:41" id="FPH-VJ-oRR"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,11 +52,11 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="CCo-db-dur" firstAttribute="top" secondItem="MH3-Tu-APS" secondAttribute="bottom" constant="8" symbolic="YES" id="A3v-u5-l9q"/>
                                                 <constraint firstItem="MH3-Tu-APS" firstAttribute="top" secondItem="tJV-pV-e0k" secondAttribute="topMargin" id="Ews-KK-rJ3"/>
                                                 <constraint firstItem="CCo-db-dur" firstAttribute="leading" secondItem="ecW-Gg-Oxe" secondAttribute="trailing" constant="15" id="KBa-F9-Pkm"/>
                                                 <constraint firstItem="ecW-Gg-Oxe" firstAttribute="top" secondItem="tJV-pV-e0k" secondAttribute="top" constant="5" id="Kp6-Rv-wco"/>
                                                 <constraint firstItem="MH3-Tu-APS" firstAttribute="leading" secondItem="ecW-Gg-Oxe" secondAttribute="trailing" constant="15" id="Yf3-lD-FyN"/>
+                                                <constraint firstItem="CCo-db-dur" firstAttribute="top" secondItem="MH3-Tu-APS" secondAttribute="bottom" id="bkc-AP-yn7"/>
                                                 <constraint firstItem="ecW-Gg-Oxe" firstAttribute="leading" secondItem="tJV-pV-e0k" secondAttribute="leading" constant="10" id="gKI-vi-HxW"/>
                                                 <constraint firstAttribute="bottom" secondItem="ecW-Gg-Oxe" secondAttribute="bottom" constant="5" id="vF7-ph-jc9"/>
                                             </constraints>
@@ -674,38 +674,60 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="238"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="mode" translatesAutoresizingMaskIntoConstraints="NO" id="ynh-TN-094">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mode" translatesAutoresizingMaskIntoConstraints="NO" id="ynh-TN-094">
                                                     <rect key="frame" x="62" y="11" width="266" height="153"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="153" id="GOF-wo-lqp"/>
+                                                        <constraint firstAttribute="width" secondItem="ynh-TN-094" secondAttribute="height" multiplier="266:153" id="YXk-2N-WWS"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="라이트 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skg-Ra-cjD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="라이트 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skg-Ra-cjD">
                                                     <rect key="frame" x="79" y="172" width="78" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="skg-Ra-cjD" secondAttribute="height" multiplier="26:7" id="Pz5-Dv-VsE"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="다크 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR1-PO-mLV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다크 모드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR1-PO-mLV">
                                                     <rect key="frame" x="249" y="172" width="64" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="AR1-PO-mLV" secondAttribute="height" multiplier="64:21" id="Bbh-Cz-i2C"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPg-v2-cLI">
-                                                    <rect key="frame" x="110" y="201" width="28" height="26"/>
-                                                    <state key="normal" title="Button" image="checkmark.circle.fill" catalog="system"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99r-hB-g0K">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99r-hB-g0K">
                                                     <rect key="frame" x="269" y="200" width="28" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="99r-hB-g0K" secondAttribute="height" multiplier="14:13" id="NBz-wq-99G"/>
+                                                        <constraint firstAttribute="height" constant="26" id="Wz4-8n-jL7"/>
+                                                    </constraints>
                                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button" image="circle" catalog="system"/>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPg-v2-cLI">
+                                                    <rect key="frame" x="110" y="201" width="28" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="uPg-v2-cLI" secondAttribute="height" multiplier="14:13" id="m8r-we-fjk"/>
+                                                        <constraint firstAttribute="height" constant="26" id="wDE-pD-sgT"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="checkmark.circle.fill" catalog="system"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="99r-hB-g0K" firstAttribute="top" secondItem="AR1-PO-mLV" secondAttribute="bottom" constant="7" id="7z0-qv-moo"/>
-                                                <constraint firstItem="AR1-PO-mLV" firstAttribute="top" secondItem="ynh-TN-094" secondAttribute="bottom" constant="8" symbolic="YES" id="CWs-ya-CwV"/>
-                                                <constraint firstItem="skg-Ra-cjD" firstAttribute="leading" secondItem="0H5-XB-3mU" secondAttribute="leadingMargin" constant="59" id="LHA-lP-7iA"/>
-                                                <constraint firstItem="uPg-v2-cLI" firstAttribute="top" secondItem="skg-Ra-cjD" secondAttribute="bottom" constant="8" symbolic="YES" id="bfz-yd-Jpk"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="AR1-PO-mLV" secondAttribute="trailing" constant="57" id="hnY-Gf-A6t"/>
-                                                <constraint firstItem="skg-Ra-cjD" firstAttribute="top" secondItem="ynh-TN-094" secondAttribute="bottom" constant="8" symbolic="YES" id="vlQ-Vv-VVk"/>
+                                                <constraint firstItem="uPg-v2-cLI" firstAttribute="leading" secondItem="0H5-XB-3mU" secondAttribute="leadingMargin" constant="90" id="TQa-gB-T2A"/>
+                                                <constraint firstItem="ynh-TN-094" firstAttribute="top" secondItem="0H5-XB-3mU" secondAttribute="topMargin" id="UMu-YO-6fU"/>
+                                                <constraint firstItem="skg-Ra-cjD" firstAttribute="top" secondItem="ynh-TN-094" secondAttribute="bottom" constant="8" symbolic="YES" id="dc3-Zy-hg0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="99r-hB-g0K" secondAttribute="trailing" constant="73" id="eRD-d1-4Vq"/>
+                                                <constraint firstItem="uPg-v2-cLI" firstAttribute="top" secondItem="skg-Ra-cjD" secondAttribute="bottom" constant="8" symbolic="YES" id="eYH-2f-q9W"/>
+                                                <constraint firstItem="99r-hB-g0K" firstAttribute="top" secondItem="AR1-PO-mLV" secondAttribute="bottom" constant="7" id="evr-Hh-Alw"/>
+                                                <constraint firstItem="AR1-PO-mLV" firstAttribute="top" secondItem="ynh-TN-094" secondAttribute="bottom" constant="8" symbolic="YES" id="exv-os-ghr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AR1-PO-mLV" secondAttribute="trailing" constant="57" id="fZF-nA-iqM"/>
+                                                <constraint firstItem="skg-Ra-cjD" firstAttribute="leading" secondItem="0H5-XB-3mU" secondAttribute="leadingMargin" constant="59" id="nbS-ri-6I4"/>
+                                                <constraint firstItem="ynh-TN-094" firstAttribute="leading" secondItem="0H5-XB-3mU" secondAttribute="leadingMargin" constant="42" id="y3e-MV-EIu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
