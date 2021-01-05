@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let tableView: UITableView = UITableView()
+    let tableView: UITableView = UITableView(frame: CGRect.zero, style: .grouped)
     
     let section: [String] = ["서치바부분(프로필)", "General부분", "Passwords부분", "Safari부분"]
     
@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         self.view.addSubview(self.tableView)
         
-        // 제약조건을 설정해주기 위해서 꼭 false로 해줘야하는데 좀 더 자세히 알아보기
         self.tableView.translatesAutoresizingMaskIntoConstraints = false
         
         let safeArea = view.safeAreaLayoutGuide
