@@ -11,6 +11,10 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpSearchBar()
+    }
+    
+    private func setUpSearchBar() {
         let searchBar = UISearchController()
         self.navigationItem.searchController = searchBar
         self.navigationItem.hidesSearchBarWhenScrolling = true
