@@ -32,12 +32,9 @@
                                                         <constraint firstAttribute="width" secondItem="ecW-Gg-Oxe" secondAttribute="height" multiplier="1:1" id="eEK-Fz-8Ab"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up iCloud, the App Store, and more." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCo-db-dur">
-                                                    <rect key="frame" x="94" y="38" width="271.66666666666669" height="41"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="CCo-db-dur" secondAttribute="height" multiplier="272:41" id="FPH-VJ-oRR"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up iCloud, the App Store, and more." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCo-db-dur">
+                                                    <rect key="frame" x="94" y="38" width="271.66666666666669" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -55,9 +52,10 @@
                                                 <constraint firstItem="MH3-Tu-APS" firstAttribute="top" secondItem="tJV-pV-e0k" secondAttribute="topMargin" id="Ews-KK-rJ3"/>
                                                 <constraint firstItem="CCo-db-dur" firstAttribute="leading" secondItem="ecW-Gg-Oxe" secondAttribute="trailing" constant="15" id="KBa-F9-Pkm"/>
                                                 <constraint firstItem="ecW-Gg-Oxe" firstAttribute="top" secondItem="tJV-pV-e0k" secondAttribute="top" constant="5" id="Kp6-Rv-wco"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CCo-db-dur" secondAttribute="trailing" constant="4.3300000000000001" id="XXm-Mk-0WY"/>
                                                 <constraint firstItem="MH3-Tu-APS" firstAttribute="leading" secondItem="ecW-Gg-Oxe" secondAttribute="trailing" constant="15" id="Yf3-lD-FyN"/>
-                                                <constraint firstItem="CCo-db-dur" firstAttribute="top" secondItem="MH3-Tu-APS" secondAttribute="bottom" id="bkc-AP-yn7"/>
                                                 <constraint firstItem="ecW-Gg-Oxe" firstAttribute="leading" secondItem="tJV-pV-e0k" secondAttribute="leading" constant="10" id="gKI-vi-HxW"/>
+                                                <constraint firstItem="CCo-db-dur" firstAttribute="top" secondItem="MH3-Tu-APS" secondAttribute="bottom" id="kI8-Lz-qqS"/>
                                                 <constraint firstAttribute="bottom" secondItem="ecW-Gg-Oxe" secondAttribute="bottom" constant="5" id="vF7-ph-jc9"/>
                                             </constraints>
                                         </tableViewCellContentView>
