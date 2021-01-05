@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     let tableView: UITableView = UITableView()
     
+    let section: [String] = ["서치바부분(프로필)", "General부분", "Passwords부분", "Safari부분"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
@@ -35,8 +37,12 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return section.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
