@@ -661,7 +661,7 @@
             <objects>
                 <tableViewController id="NvM-Py-ifC" customClass="DisplaySettingViewController" customModule="AutoLayoutStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="78w-bl-WbQ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="1140"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <sections>
@@ -974,7 +974,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="jwq-jp-KZY" userLabel="자동 잠금">
+                            <tableViewSection id="jwq-jp-KZY" userLabel="텍스트 설정">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="4DX-NT-eu9">
                                         <rect key="frame" x="0.0" y="803.66666793823242" width="390" height="45"/>
@@ -1044,6 +1044,55 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="디스플레이 확대/축소" footerTitle="iPhone을 보는 방식을 선택합니다. 확대의 경우 제어기가 크게 표시됩니다. 표준의 경우 더 많은 콘텐츠가 표시됩니다." id="ETp-eh-XMJ" userLabel="텍스트 설정">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="ZGJ-o9-5VS">
+                                        <rect key="frame" x="0.0" y="957" width="390" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZGJ-o9-5VS" id="HHa-Na-Qmc">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjb-TX-i63">
+                                                    <rect key="frame" x="20" y="12" width="34" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Sjb-TX-i63" secondAttribute="height" multiplier="34:21" id="MF6-RD-eEc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-mG-rbU">
+                                                    <rect key="frame" x="346" y="6" width="36.333333333333314" height="33.333333333333336"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ohC-mG-rbU" secondAttribute="height" multiplier="12:11" id="uAQ-OD-JNd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="표준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW8-tA-Ezs">
+                                                    <rect key="frame" x="319" y="13" width="30" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="fW8-tA-Ezs" secondAttribute="height" multiplier="10:7" id="jvv-AF-8gO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ohC-mG-rbU" secondAttribute="trailing" constant="7.6699999999999999" id="1OD-PM-etT"/>
+                                                <constraint firstItem="Sjb-TX-i63" firstAttribute="top" secondItem="HHa-Na-Qmc" secondAttribute="topMargin" constant="1" id="3Vx-qo-NwN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Sjb-TX-i63" secondAttribute="bottom" constant="1" id="9nw-YO-Jyc"/>
+                                                <constraint firstItem="Sjb-TX-i63" firstAttribute="leading" secondItem="HHa-Na-Qmc" secondAttribute="leadingMargin" id="Meb-5g-Y23"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fW8-tA-Ezs" secondAttribute="trailing" constant="21" id="ac0-bB-tSM"/>
+                                                <constraint firstAttribute="bottom" secondItem="ohC-mG-rbU" secondAttribute="bottom" constant="5.6699999999999999" id="kaQ-qv-XO0"/>
+                                                <constraint firstItem="fW8-tA-Ezs" firstAttribute="top" secondItem="HHa-Na-Qmc" secondAttribute="topMargin" constant="2" id="mdW-Zp-rXL"/>
+                                                <constraint firstItem="fW8-tA-Ezs" firstAttribute="bottom" secondItem="HHa-Na-Qmc" secondAttribute="bottomMargin" id="qPq-9F-8sy"/>
+                                                <constraint firstItem="ohC-mG-rbU" firstAttribute="top" secondItem="HHa-Na-Qmc" secondAttribute="top" constant="6" id="uFm-PZ-R0l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="NvM-Py-ifC" id="nfi-2b-5p7"/>
@@ -1053,7 +1102,7 @@
                     <navigationItem key="navigationItem" title="디스플레이 및 밝기" id="K3E-IV-XTq">
                         <barButtonItem key="backBarButtonItem" title="설정" id="Z9D-02-hg1"/>
                     </navigationItem>
-                    <size key="freeformSize" width="390" height="1000"/>
+                    <size key="freeformSize" width="390" height="1140"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OO-QA-iE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
