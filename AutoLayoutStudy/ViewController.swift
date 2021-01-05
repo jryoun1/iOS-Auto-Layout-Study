@@ -10,10 +10,13 @@ import UIKit
 class ViewController: UIViewController {
     let tableView: UITableView = UITableView(frame: CGRect.zero, style: .grouped)
     
-    let section: [String] = ["서치바부분(프로필)", "General부분", "Passwords부분", "Safari부분"]
+    let hierarchicalData: [[String]] = [["Sign in to your iPhone"],["General", "Accessibility", "Privacy"], ["Password"], ["Safari", "News", "Maps", "Shortcuts", "Health", "Siri", "Photo", "Game Center"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(hierarchicalData.count)
+        print(hierarchicalData[1][2])
+        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
@@ -37,18 +40,17 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return section.count
+        return hierarchicalData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return hierarchicalData[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
 
-        cell.textLabel?.text = "\(indexPath.row) 번째 셀"
-
+        cell.textLabel?.text = "\(hierarchicalData[indexPath.section][indexPath.row])"
         return cell
     }
 }
