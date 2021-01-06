@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(hierarchicalData.count)
-        print(hierarchicalData[1][2])
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -56,5 +54,6 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
 }
