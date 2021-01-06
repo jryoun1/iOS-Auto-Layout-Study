@@ -8,8 +8,9 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
     let tableView: UITableView = UITableView(frame: CGRect.zero, style: .grouped)
+    
+    let hierarchicalData: [[String]] = [["라이트 다크 모드", "자동", "옵션"],["밝기 슬라이드", "True Zone", ], ["Night Shift"], ["자동 잠금", "들어서 깨우기"], ["텍스트 크기", "볼드체 텍스트"], ["보기"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,17 +38,17 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return hierarchicalData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return hierarchicalData[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
 
-        cell.textLabel?.text = "\(indexPath)번째 셀"
+        cell.textLabel?.text = "\(hierarchicalData[indexPath.section][indexPath.row])"
         return cell
     }
 }
