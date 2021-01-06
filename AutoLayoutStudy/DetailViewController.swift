@@ -11,6 +11,8 @@ class DetailViewController: UIViewController {
     let tableView: UITableView = UITableView(frame: CGRect.zero, style: .grouped)
     
     let hierarchicalData: [[String]] = [["라이트 다크 모드", "자동", "옵션"],["밝기 슬라이드", "True Zone", ], ["Night Shift"], ["자동 잠금", "들어서 깨우기"], ["텍스트 크기", "볼드체 텍스트"], ["보기"]]
+    let sectionHeader: [String] = ["화면스타일", "밝기", "", "", "", "디스플레이 확대/축소"]
+    let sectionFooter: [String] = ["", "iPhone 디스플레이를 주변광에 맞춰 색상이 다른 환경에서도 일관적으로 보이도록 자동 조정합니다.", "", "", "", "iPhone을 보는 방식을 선택합니다. 확대의 경우 제어기가 크게 표시됩니다. 표준의 경우 더 많은 콘텐츠가 표시됩니다."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
