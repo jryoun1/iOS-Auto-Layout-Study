@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-    let entries = [[""], ["General", "Accessibility", "Privacy"], ["Passwords"], ["Safari", "News", "Maps", "Shortcuts", "Health", "Siri & Search", "Photos", "Game Center"], ["Developer"]]
+    let entries = [[""], ["General", "Accessibility", "Privacy", "Display & Brightness"], ["Passwords"], ["Safari", "News", "Maps", "Shortcuts", "Health", "Siri & Search", "Photos", "Game Center"], ["Developer"]]
     
     @IBOutlet weak var settingsTableView: UITableView!
     
