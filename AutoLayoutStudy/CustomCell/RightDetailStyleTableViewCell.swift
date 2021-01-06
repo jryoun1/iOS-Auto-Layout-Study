@@ -21,6 +21,8 @@ class RightDetailStyleTableViewCell: UITableViewCell {
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(detailLabel)
         
+        titleLabel.text = "titleLabel"
+        detailLabel.text = "detailLabel"
         titleLabel.font = UIFont(name: "System", size: 13)
         detailLabel.font = UIFont(name: "System", size: 13)
         detailLabel.textColor = UIColor.gray
