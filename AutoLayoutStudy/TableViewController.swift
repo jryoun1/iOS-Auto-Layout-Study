@@ -9,15 +9,5 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setSearchBar()
-    }
-
-    private func setSearchBar() {
-        self.navigationItem.searchController = UISearchController()
-        self.navigationItem.hidesSearchBarWhenScrolling = true
-    }
-
 }
 
