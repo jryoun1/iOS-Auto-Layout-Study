@@ -48,10 +48,3 @@ extension DetailViewController: UITableViewDataSource {
     }
         
 }
-
-//extension ViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 10
-//    }
-//}
-
