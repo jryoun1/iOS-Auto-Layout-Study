@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,12 +31,10 @@ extension DetailViewController: UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let phoneNumberCell = detailTableView.dequeueReusableCell(withIdentifier: "PhoneNumberCell", for: indexPath)
-            phoneNumberCell.textLabel?.text = "010-1234-5678"
             return phoneNumberCell
         case 1:
             // 임시 셀 할당
             let phoneNumberCell = detailTableView.dequeueReusableCell(withIdentifier: "PhoneNumberCell", for: indexPath)
-            phoneNumberCell.textLabel?.text = "010-1234-5678"
             return phoneNumberCell
         case 2:
             let shareCell = detailTableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
@@ -48,5 +46,12 @@ extension DetailViewController: UITableViewDataSource {
             return extraCell
         }
     }
-    
+        
 }
+
+//extension ViewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 10
+//    }
+//}
+
