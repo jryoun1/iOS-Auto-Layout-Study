@@ -36,6 +36,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2nc-gf-6K8" kind="show" id="0h3-rA-tgX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -67,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nRQ-yf-FQH">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultCell" textLabel="MlG-L5-qvN" rowHeight="50" style="IBUITableViewCellStyleDefault" id="Hdt-S1-Xgk">
@@ -87,7 +90,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SR1-bG-EBP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhoneNumberCell" id="SR1-bG-EBP">
                                         <rect key="frame" x="0.0" y="78" width="414" height="75.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SR1-bG-EBP" id="Fji-NI-I1y">
@@ -134,6 +137,7 @@
                             <constraint firstItem="nRQ-yf-FQH" firstAttribute="leading" secondItem="nZX-vZ-lBv" secondAttribute="leading" id="pvu-ed-0h9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ekh-GS-j7n"/>
                     <connections>
                         <outlet property="detailTableView" destination="nRQ-yf-FQH" id="wB7-zq-fGz"/>
                     </connections>
@@ -145,7 +149,6 @@
         <!--Detail Table View Controller-->
         <scene sceneID="pId-Vi-fgN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qLU-61-Mfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="7Nh-AQ-BuJ" customClass="DetailTableViewController" customModule="AutoLayoutStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="10" sectionFooterHeight="10" id="hAb-wD-8sW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -257,6 +260,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLU-61-Mfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2843" y="658"/>
         </scene>

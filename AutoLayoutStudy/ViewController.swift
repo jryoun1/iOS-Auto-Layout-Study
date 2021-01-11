@@ -44,6 +44,14 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return firstLetterArray[section]
     }
+    
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        return index
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return firstLetterArray
+    }
 }
 
 // MARK: NavigationBar
