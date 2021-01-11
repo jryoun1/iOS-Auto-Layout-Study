@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="g39-5L-LYO">
             <objects>
-                <viewController id="2nc-gf-6K8" sceneMemberID="viewController">
+                <viewController id="2nc-gf-6K8" customClass="DetailViewController" customModule="AutoLayoutStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U7x-Fj-I22">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,6 +134,9 @@
                             <constraint firstItem="nRQ-yf-FQH" firstAttribute="leading" secondItem="nZX-vZ-lBv" secondAttribute="leading" id="pvu-ed-0h9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailTableView" destination="nRQ-yf-FQH" id="wB7-zq-fGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGb-Yw-1YA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
