@@ -3,6 +3,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var numberOfNameList: UILabel!
     
     var items: [String] = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"]
     
@@ -11,6 +12,7 @@ class ViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        numberOfNameList.text = "\(items.count)개의 연락처"
     }
 }
 

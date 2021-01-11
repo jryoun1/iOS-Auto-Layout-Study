@@ -40,7 +40,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="연락처 갯수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0G-6z-e6h">
-                                <rect key="frame" x="156" y="789" width="78" height="35"/>
+                                <rect key="frame" x="80" y="789" width="235" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,6 +72,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="numberOfNameList" destination="U0G-6z-e6h" id="eW3-4l-9v6"/>
                         <outlet property="tableView" destination="Wmz-Dl-KV7" id="dSx-6f-8nE"/>
                     </connections>
                 </viewController>
