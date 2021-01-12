@@ -17,6 +17,14 @@ class ViewController: UIViewController {
         
         self.reload()
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0{
+            self.navigationController?.isNavigationBarHidden = true
+        } else {
+            self.navigationController?.isNavigationBarHidden = false
+        }
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
