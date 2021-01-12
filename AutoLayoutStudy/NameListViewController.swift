@@ -11,6 +11,8 @@ class NameListViewController: UIViewController {
     @IBOutlet weak var emergencyView: UIView!
     @IBOutlet weak var tableView: UIView!
     
+    var infoText: [String] = ["메시지 보내기", "연락처 공유", "즐겨찾기에 추가"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,5 +28,23 @@ class NameListViewController: UIViewController {
         memoView.layer.cornerRadius = 10
         emergencyView.layer.cornerRadius = 10
         tableView.layer.cornerRadius = 10
+    }
+}
+
+extension NameListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return infoText.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath)
+        
+        cell.textLabel?.text = infoText[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
