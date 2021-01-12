@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0{
-            self.navigationController?.isNavigationBarHidden = true
+            self.navigationItem.title = ""
         } else {
-            self.navigationController?.isNavigationBarHidden = false
+            self.navigationItem.title = "연락처"
         }
     }
 }
