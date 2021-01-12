@@ -25,8 +25,15 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wmz-Dl-KV7">
-                                <rect key="frame" x="0.0" y="144" width="390" height="648.66666666666663"/>
+                                <rect key="frame" x="0.0" y="144" width="390" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연락처 갯수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U0G-6z-e6h">
+                                    <rect key="frame" x="0.0" y="99.666667938232422" width="390" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCellList" id="C6z-mb-mmM" customClass="NameListTableViewCell" customModule="AutoLayoutStudy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
@@ -42,12 +49,6 @@
                                     <outlet property="delegate" destination="g6B-Qh-atu" id="uu2-qH-WjA"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연락처 갯수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0G-6z-e6h">
-                                <rect key="frame" x="0.0" y="803.66666666666663" width="390" height="20.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6UW-t3-Pjd">
                                 <rect key="frame" x="360" y="150" width="30" height="624"/>
                                 <subviews>
@@ -187,17 +188,13 @@
                         <viewLayoutGuide key="safeArea" id="TYV-kc-zb5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="U0G-6z-e6h" secondAttribute="bottom" constant="20" symbolic="YES" id="2XR-zm-XTD"/>
                             <constraint firstItem="Wmz-Dl-KV7" firstAttribute="leading" secondItem="TYV-kc-zb5" secondAttribute="leading" id="9vP-gl-NY1"/>
                             <constraint firstAttribute="trailing" secondItem="6UW-t3-Pjd" secondAttribute="trailing" id="C33-Hx-szb"/>
-                            <constraint firstItem="TYV-kc-zb5" firstAttribute="trailing" secondItem="U0G-6z-e6h" secondAttribute="trailing" id="Oxo-38-ZIM"/>
-                            <constraint firstItem="U0G-6z-e6h" firstAttribute="leading" secondItem="TYV-kc-zb5" secondAttribute="leading" id="QfX-Qs-Fgj"/>
-                            <constraint firstItem="U0G-6z-e6h" firstAttribute="top" secondItem="Wmz-Dl-KV7" secondAttribute="bottom" constant="11" id="VaP-hg-4H2"/>
                             <constraint firstItem="5Ej-zv-N70" firstAttribute="trailing" secondItem="TYV-kc-zb5" secondAttribute="trailing" id="ghT-kp-8mB"/>
                             <constraint firstItem="5Ej-zv-N70" firstAttribute="leading" secondItem="TYV-kc-zb5" secondAttribute="leading" id="lMF-F6-wdw"/>
+                            <constraint firstItem="TYV-kc-zb5" firstAttribute="bottom" secondItem="Wmz-Dl-KV7" secondAttribute="bottom" id="o8e-gG-9xd"/>
                             <constraint firstItem="Wmz-Dl-KV7" firstAttribute="trailing" secondItem="TYV-kc-zb5" secondAttribute="trailing" id="pH8-I8-7mB"/>
                             <constraint firstItem="5Ej-zv-N70" firstAttribute="top" secondItem="TYV-kc-zb5" secondAttribute="top" id="pZd-sH-Y3R"/>
-                            <constraint firstItem="U0G-6z-e6h" firstAttribute="top" secondItem="Wmz-Dl-KV7" secondAttribute="bottom" constant="11" id="t2d-LB-0Kf"/>
                             <constraint firstItem="Wmz-Dl-KV7" firstAttribute="top" secondItem="5Ej-zv-N70" secondAttribute="bottom" id="v5I-Z1-N47"/>
                             <constraint firstItem="6UW-t3-Pjd" firstAttribute="top" secondItem="5Ej-zv-N70" secondAttribute="bottom" constant="6" id="vqh-IY-Iw7"/>
                         </constraints>
