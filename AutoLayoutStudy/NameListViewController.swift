@@ -9,6 +9,7 @@ class NameListViewController: UIViewController {
     @IBOutlet weak var phoneNumberView: UIView!
     @IBOutlet weak var memoView: UIView!
     @IBOutlet weak var emergencyView: UIView!
+    @IBOutlet weak var tableView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,5 +25,6 @@ class NameListViewController: UIViewController {
         phoneNumberView.layer.cornerRadius = 10
         memoView.layer.cornerRadius = 10
         emergencyView.layer.cornerRadius = 10
+        tableView.layer.cornerRadius = 10
     }
 }

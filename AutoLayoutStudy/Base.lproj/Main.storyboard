@@ -377,6 +377,13 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJ4-7j-iIJ">
+                                        <rect key="frame" x="8" y="227" width="374" height="175"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <segue destination="YSY-vn-c8s" kind="embed" id="V9h-7h-0Fk"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96860128639999998" green="0.96078246830000003" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="wmd-em-YQT"/>
@@ -409,6 +416,7 @@
                         <outlet property="messageView" destination="AhI-jP-pMq" id="64A-fR-XFm"/>
                         <outlet property="mmsView" destination="cAZ-SR-SPl" id="Gtt-Ng-XN7"/>
                         <outlet property="phoneNumberView" destination="0hE-vD-rav" id="5nm-Bb-in0"/>
+                        <outlet property="tableView" destination="VJ4-7j-iIJ" id="ofJ-LA-iqR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haz-rk-UrG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -432,6 +440,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktw-F2-600" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="621.53846153846155" y="90.995260663507111"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uQv-09-zrp">
+            <objects>
+                <viewController id="YSY-vn-c8s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aDb-ds-i96">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="175"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7V-oH-I3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100" y="91"/>
         </scene>
     </scenes>
     <resources>
