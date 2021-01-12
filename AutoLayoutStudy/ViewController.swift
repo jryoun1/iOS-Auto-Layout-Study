@@ -6,7 +6,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberOfNameList: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var items: [String] = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"]
+    var items: [String] = ["Alpha", "Amily", "Bravo", "Bibi", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0{
-            self.navigationItem.title = ""
-        } else {
             self.navigationItem.title = "연락처"
+        } else if scrollView.panGestureRecognizer.translation(in: scrollView).y > 0 {
+            self.navigationItem.title = ""
         }
     }
 }
