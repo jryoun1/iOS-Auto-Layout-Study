@@ -40,6 +40,7 @@ extension NameListViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath)
         
         cell.textLabel?.text = infoText[indexPath.row]
+        cell.textLabel?.textColor = UIColor.link
         
         return cell
     }
