@@ -24,10 +24,15 @@ class MainViewController: UIViewController {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
     func countPhoneNumberList() -> Int {
         var totalCount: Int = 0
         for section in 0..<phoneNumberList.count {
-            for row in 0..<phoneNumberList[section].count {
+            for _ in 0..<phoneNumberList[section].count {
                 totalCount += 1
             }
         }
