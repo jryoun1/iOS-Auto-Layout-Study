@@ -23,12 +23,9 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         setUpAllViewRoundCorner()
-        automaticallyAdjustsScrollViewInsets = false
 
         tableView.contentInset = UIEdgeInsets(top: topViewHeightConstraint.constant, left: 0, bottom: 0, right: 0)
         tableView.scrollIndicatorInsets = tableView.contentInset
-        
-        bringAllViewFrontOfTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,12 +37,6 @@ class SecondViewController: UIViewController {
     private func setUpAllViewRoundCorner() {
         for view in views {
             view.setUpRoundCorner()
-        }
-    }
-    
-    private func bringAllViewFrontOfTableView() {
-        for view in frontViews {
-            self.view.bringSubviewToFront(view)
         }
     }
     

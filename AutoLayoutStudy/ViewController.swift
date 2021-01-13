@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         self.navigationItem.searchController = searchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
     }
-    
 }
 
 extension ViewController: UITableViewDataSource {

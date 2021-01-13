@@ -67,12 +67,30 @@
         <!--Second View Controller-->
         <scene sceneID="Nkg-eW-Cjp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zWc-vy-f0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="zdT-A8-jPa" customClass="SecondViewController" customModule="AutoLayoutStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QEP-MU-wrj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WyL-g9-xPZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1Pz-QX-vQB">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Pz-QX-vQB" id="atD-E3-nGz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zdT-A8-jPa" id="hV9-Qe-ygy"/>
+                                    <outlet property="delegate" destination="zdT-A8-jPa" id="uTz-ac-jww"/>
+                                </connections>
+                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAV-ct-bL3">
                                 <rect key="frame" x="0.0" y="63" width="414" height="190"/>
                                 <subviews>
@@ -200,25 +218,6 @@
                                     <constraint firstAttribute="trailing" secondItem="Jj2-GN-f24" secondAttribute="trailing" id="llS-vi-7JT"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WyL-g9-xPZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1Pz-QX-vQB">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Pz-QX-vQB" id="atD-E3-nGz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="zdT-A8-jPa" id="hV9-Qe-ygy"/>
-                                    <outlet property="delegate" destination="zdT-A8-jPa" id="uTz-ac-jww"/>
-                                </connections>
-                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LBO-F8-LD2"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
@@ -264,6 +263,7 @@
                         <outletCollection property="frontViews" destination="X76-Eb-1WN" collectionClass="NSMutableArray" id="OWg-wn-hgJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWc-vy-f0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101" y="88"/>
         </scene>
