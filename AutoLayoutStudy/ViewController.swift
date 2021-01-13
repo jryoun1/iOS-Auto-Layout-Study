@@ -7,6 +7,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var items: [String] = ["Alpha", "Amily", "Bravo", "Bibi", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"]
+    var numberOfSearchText: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,7 +15,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         numberOfNameList.text = "\(items.count)개의 연락처"
-        
+
         self.reload()
     }
     
@@ -50,6 +51,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if self.searchBar.text?.isEmpty == true {
             return self.items.filter{ $0.first! == charactor }.count
         }
+        numberOfSearchText = self.items.filter{ $0.first! == charactor }.filter{ $0.contains(self.searchBar.text!) }.count
+        numberOfNameList.text = "\(numberOfSearchText)개의 연락처"
+        
         return self.items.filter{ $0.first! == charactor }.filter{ $0.contains(self.searchBar.text!) }.count
     }
     
