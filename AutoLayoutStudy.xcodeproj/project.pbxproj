@@ -18,6 +18,7 @@
 		E2FA4AED25AE222300200889 /* SubTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4AEC25AE222200200889 /* SubTitleTableViewCell.swift */; };
 		E2FA4AF025AE226300200889 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4AEF25AE226300200889 /* BasicTableViewCell.swift */; };
 		E2FA4AF325AE9A1D00200889 /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4AF225AE9A1C00200889 /* MemoTableViewCell.swift */; };
+		E2FA4AF625AEA4BA00200889 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4AF525AEA4BA00200889 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E2FA4AEC25AE222200200889 /* SubTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleTableViewCell.swift; sourceTree = "<group>"; };
 		E2FA4AEF25AE226300200889 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		E2FA4AF225AE9A1C00200889 /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
+		E2FA4AF525AEA4BA00200889 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				26F6C46E2593029E00F7F27A /* AppDelegate.swift */,
 				E2FA4ADB25AC9F8A00200889 /* MainViewController.swift */,
 				E2FA4ADE25AC9FA100200889 /* DetailViewController.swift */,
+				E2FA4AF525AEA4BA00200889 /* TestViewController.swift */,
 				26F6C4702593029E00F7F27A /* SceneDelegate.swift */,
 				26F6C4742593029E00F7F27A /* Main.storyboard */,
 				E2FA4AF225AE9A1C00200889 /* MemoTableViewCell.swift */,
@@ -159,6 +162,7 @@
 				26F6C46F2593029E00F7F27A /* AppDelegate.swift in Sources */,
 				26F6C4712593029E00F7F27A /* SceneDelegate.swift in Sources */,
 				E2FA4ADF25AC9FA100200889 /* DetailViewController.swift in Sources */,
+				E2FA4AF625AEA4BA00200889 /* TestViewController.swift in Sources */,
 				E2FA4AF025AE226300200889 /* BasicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

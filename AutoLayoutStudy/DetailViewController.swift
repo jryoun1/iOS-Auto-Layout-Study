@@ -9,10 +9,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var testView: UIView!
     let detailList: [[String]] = [["전화번호"],["메모"],["메시지 보내기", "연락처 공유","즐겨찾기에 추가"], ["긴급 연락처에 추가"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationItem.titleView = testView
+//        self.navigationController?.title = "title"
+//        self.navigationItem.title = "title1"
+//        self.navigationController?.navigationBar.
     }
 
 }
