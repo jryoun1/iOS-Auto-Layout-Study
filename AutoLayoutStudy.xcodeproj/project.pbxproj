@@ -13,6 +13,7 @@
 		26F6C4762593029E00F7F27A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F6C4742593029E00F7F27A /* Main.storyboard */; };
 		26F6C478259302A000F7F27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6C477259302A000F7F27A /* Assets.xcassets */; };
 		26F6C47B259302A000F7F27A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F6C479259302A000F7F27A /* LaunchScreen.storyboard */; };
+		9A54B06225ACC5A500C25665 /* NameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A54B06125ACC5A500C25665 /* NameListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		26F6C477259302A000F7F27A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26F6C47A259302A000F7F27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26F6C47C259302A000F7F27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A54B06125ACC5A500C25665 /* NameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				26F6C46E2593029E00F7F27A /* AppDelegate.swift */,
 				26F6C4702593029E00F7F27A /* SceneDelegate.swift */,
 				26F6C4722593029E00F7F27A /* ViewController.swift */,
+				9A54B06125ACC5A500C25665 /* NameListViewController.swift */,
 				26F6C4742593029E00F7F27A /* Main.storyboard */,
 				26F6C477259302A000F7F27A /* Assets.xcassets */,
 				26F6C479259302A000F7F27A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				26F6C4732593029E00F7F27A /* ViewController.swift in Sources */,
 				26F6C46F2593029E00F7F27A /* AppDelegate.swift in Sources */,
 				26F6C4712593029E00F7F27A /* SceneDelegate.swift in Sources */,
+				9A54B06225ACC5A500C25665 /* NameListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
