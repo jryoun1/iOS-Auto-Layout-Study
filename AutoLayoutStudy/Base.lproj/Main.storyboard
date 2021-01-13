@@ -256,11 +256,6 @@
                         <outletCollection property="views" destination="PmI-KS-grA" collectionClass="NSMutableArray" id="sNN-Cw-nhW"/>
                         <outletCollection property="views" destination="X76-Eb-1WN" collectionClass="NSMutableArray" id="fkQ-QJ-Pig"/>
                         <outletCollection property="views" destination="Ctm-Wm-cYa" collectionClass="NSMutableArray" id="JcM-xl-Ool"/>
-                        <outletCollection property="frontViews" destination="gAV-ct-bL3" collectionClass="NSMutableArray" id="To6-1C-bvT"/>
-                        <outletCollection property="frontViews" destination="Ctm-Wm-cYa" collectionClass="NSMutableArray" id="E48-lC-hy1"/>
-                        <outletCollection property="frontViews" destination="PmI-KS-grA" collectionClass="NSMutableArray" id="FxD-zu-xxM"/>
-                        <outletCollection property="frontViews" destination="WsU-sO-VLO" collectionClass="NSMutableArray" id="I2x-ds-axT"/>
-                        <outletCollection property="frontViews" destination="X76-Eb-1WN" collectionClass="NSMutableArray" id="OWg-wn-hgJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWc-vy-f0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

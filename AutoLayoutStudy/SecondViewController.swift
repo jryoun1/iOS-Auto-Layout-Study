@@ -14,7 +14,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var topViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var label: UILabel!
     @IBOutlet var views: [UIView]!
-    @IBOutlet var frontViews: [UIView]!
     
     let topViewMinHeight: CGFloat = 100
     let topViewMaxHeight: CGFloat = 190
