@@ -7,7 +7,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var items: [String] = ["Alpha", "Amily", "Bravo", "Bibi", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"]
-    var numberOfSearchText: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +46,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let charactor = Array(Set(self.items.map{ $0.first! })).sorted()[section]
+        var numberOfSearchText: Int = 0
         
         if self.searchBar.text?.isEmpty == true {
+            numberOfNameList.text = "\(items.count)개의 연락처"
             return self.items.filter{ $0.first! == charactor }.count
         }
         numberOfSearchText = self.items.filter{ $0.first! == charactor }.filter{ $0.contains(self.searchBar.text!) }.count
@@ -82,4 +83,9 @@ extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.reload()
     }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        numberOfNameList.text = "\(items.count)개의 연락처"
+        self.reload()
+      }
 }
