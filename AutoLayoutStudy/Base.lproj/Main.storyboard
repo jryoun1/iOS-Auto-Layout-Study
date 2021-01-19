@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ooy-3P-kk8" userLabel="Root Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="389.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="551.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOL-kC-HdO">
                                                 <rect key="frame" x="112" y="0.0" width="190.5" height="41"/>
@@ -28,32 +28,35 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ga0-fo-9gf">
-                                                <rect key="frame" x="87" y="49" width="240" height="128"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainImage" translatesAutoresizingMaskIntoConstraints="NO" id="ga0-fo-9gf">
+                                                <rect key="frame" x="62" y="49" width="290" height="290"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ga0-fo-9gf" secondAttribute="height" multiplier="1:1" id="a3U-hx-Jk0"/>
+                                                </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오토레이아웃 공부하는거 어려운데 재밌는데 어렵고 지금 나는 졸리고 하지만 화이팅. 다들 화이팅해요!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-Ng-LH1">
-                                                <rect key="frame" x="12.5" y="185" width="389.5" height="40.5"/>
+                                                <rect key="frame" x="12.5" y="347" width="389.5" height="40.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-Gg-guJ" userLabel="TextField Stack View">
-                                                <rect key="frame" x="87" y="233.5" width="240" height="76"/>
+                                                <rect key="frame" x="62" y="395.5" width="290" height="76"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7A-Uz-DXe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Mz-Sf-LSv">
-                                                        <rect key="frame" x="0.0" y="42" width="240" height="34"/>
+                                                        <rect key="frame" x="0.0" y="42" width="290" height="34"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OOB-Vg-oRG" userLabel="Switch &amp; Label Stack View">
-                                                <rect key="frame" x="114.5" y="317.5" width="185.5" height="31"/>
+                                                <rect key="frame" x="114.5" y="479.5" width="185.5" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYr-mt-c9g">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -67,7 +70,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WE4-66-6f3" userLabel="Button Stack View">
-                                                <rect key="frame" x="132" y="356.5" width="150" height="33"/>
+                                                <rect key="frame" x="132" y="518.5" width="150" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-pT-9Sw">
                                                         <rect key="frame" x="0.0" y="0.0" width="67" height="33"/>
@@ -90,6 +93,7 @@
                                 <constraints>
                                     <constraint firstItem="Ooy-3P-kk8" firstAttribute="top" secondItem="xyu-95-oXQ" secondAttribute="top" id="221-bi-36K"/>
                                     <constraint firstItem="Ooy-3P-kk8" firstAttribute="width" secondItem="yGq-G6-JZc" secondAttribute="width" id="97z-9U-E85"/>
+                                    <constraint firstItem="ga0-fo-9gf" firstAttribute="width" secondItem="yGq-G6-JZc" secondAttribute="width" multiplier="70%" id="BT2-WM-g8a"/>
                                     <constraint firstItem="Ooy-3P-kk8" firstAttribute="leading" secondItem="xyu-95-oXQ" secondAttribute="leading" id="DNF-Gh-am8"/>
                                     <constraint firstItem="Ooy-3P-kk8" firstAttribute="bottom" secondItem="xyu-95-oXQ" secondAttribute="bottom" id="Dfd-la-DZn"/>
                                     <constraint firstItem="Ooy-3P-kk8" firstAttribute="trailing" secondItem="xyu-95-oXQ" secondAttribute="trailing" id="KdS-7Y-ssP"/>
@@ -115,6 +119,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mainImage" width="536" height="536"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
