@@ -34,12 +34,20 @@
                                                     <constraint firstAttribute="width" secondItem="SBt-83-mFj" secondAttribute="height" multiplier="1:1" id="fD0-FO-dmx"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="안녕하세요. 그린입니다! 오토레이아웃 스터디 모두 함께 잘해보도록 노력해요😀" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KE4-iv-OEo">
+                                                <rect key="frame" x="87" y="375.66666666666669" width="216" height="61.333333333333314"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="KE4-iv-OEo" firstAttribute="width" secondItem="SBt-83-mFj" secondAttribute="width" multiplier="0.9" id="47n-zL-g1F"/>
                                             <constraint firstItem="SBt-83-mFj" firstAttribute="width" secondItem="Aiv-BJ-PJj" secondAttribute="width" multiplier="0.7" id="KoN-Eo-SvX"/>
                                             <constraint firstItem="T4C-DZ-dKu" firstAttribute="top" secondItem="Aiv-BJ-PJj" secondAttribute="top" constant="46" id="VIL-M1-KEu"/>
                                             <constraint firstItem="SBt-83-mFj" firstAttribute="top" secondItem="T4C-DZ-dKu" secondAttribute="bottom" constant="8" id="t1N-LO-yaW"/>
+                                            <constraint firstItem="KE4-iv-OEo" firstAttribute="top" secondItem="SBt-83-mFj" secondAttribute="bottom" constant="8" id="wy5-ke-A9P"/>
                                         </constraints>
                                     </view>
                                 </subviews>
