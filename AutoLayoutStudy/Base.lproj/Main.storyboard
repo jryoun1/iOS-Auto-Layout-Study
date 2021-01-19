@@ -21,7 +21,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aiv-BJ-PJj" userLabel="Contents View">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="739"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login Screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4C-DZ-dKu">
+                                                <rect key="frame" x="100" y="46" width="191" height="40.666666666666657"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="T4C-DZ-dKu" firstAttribute="top" secondItem="Aiv-BJ-PJj" secondAttribute="top" constant="46" id="VIL-M1-KEu"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
