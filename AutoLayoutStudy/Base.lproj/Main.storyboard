@@ -66,16 +66,16 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WE4-66-6f3" userLabel="Button Stack View">
-                                                <rect key="frame" x="161" y="316" width="92" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WE4-66-6f3" userLabel="Button Stack View">
+                                                <rect key="frame" x="142" y="316" width="130" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-pT-9Sw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
+                                                        <state key="normal" title="Login"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-GA-w16">
-                                                        <rect key="frame" x="46" y="0.0" width="46" height="30"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <rect key="frame" x="73" y="0.0" width="57" height="30"/>
+                                                        <state key="normal" title="Register"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
