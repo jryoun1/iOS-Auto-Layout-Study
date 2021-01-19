@@ -40,12 +40,26 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-4d-UW0">
+                                                <rect key="frame" x="75" y="483" width="240" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yyp-wC-bU5">
+                                                <rect key="frame" x="75" y="525" width="240" height="34"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="KE4-iv-OEo" firstAttribute="width" secondItem="SBt-83-mFj" secondAttribute="width" multiplier="0.9" id="47n-zL-g1F"/>
                                             <constraint firstItem="SBt-83-mFj" firstAttribute="width" secondItem="Aiv-BJ-PJj" secondAttribute="width" multiplier="0.7" id="KoN-Eo-SvX"/>
+                                            <constraint firstItem="a5t-4d-UW0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KE4-iv-OEo" secondAttribute="bottom" constant="46" id="Ncg-rY-ux0"/>
+                                            <constraint firstItem="Yyp-wC-bU5" firstAttribute="top" secondItem="a5t-4d-UW0" secondAttribute="bottom" constant="5" id="SHl-jx-8nn"/>
                                             <constraint firstItem="T4C-DZ-dKu" firstAttribute="top" secondItem="Aiv-BJ-PJj" secondAttribute="top" constant="46" id="VIL-M1-KEu"/>
+                                            <constraint firstItem="Yyp-wC-bU5" firstAttribute="width" secondItem="a5t-4d-UW0" secondAttribute="width" id="hJi-F3-j0w"/>
+                                            <constraint firstItem="a5t-4d-UW0" firstAttribute="width" secondItem="SBt-83-mFj" secondAttribute="width" multiplier="0.404167" id="siL-f4-bJf"/>
                                             <constraint firstItem="SBt-83-mFj" firstAttribute="top" secondItem="T4C-DZ-dKu" secondAttribute="bottom" constant="8" id="t1N-LO-yaW"/>
                                             <constraint firstItem="KE4-iv-OEo" firstAttribute="top" secondItem="SBt-83-mFj" secondAttribute="bottom" constant="8" id="wy5-ke-A9P"/>
                                         </constraints>
