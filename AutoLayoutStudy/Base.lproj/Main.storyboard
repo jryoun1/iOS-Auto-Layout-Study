@@ -50,29 +50,44 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-at-z7d">
+                                                <rect key="frame" x="100" y="584" width="49" height="31"/>
+                                            </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccp-QS-CiA">
                                                 <rect key="frame" x="162" y="587" width="129" height="24"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FG7-at-z7d">
-                                                <rect key="frame" x="100" y="584" width="49" height="31"/>
-                                            </switch>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XJ-dY-1BV">
+                                                <rect key="frame" x="129" y="635" width="44" height="33"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Login"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToA-WT-yAe">
+                                                <rect key="frame" x="183" y="635" width="67" height="33"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Register"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="KE4-iv-OEo" firstAttribute="width" secondItem="SBt-83-mFj" secondAttribute="width" multiplier="0.9" id="47n-zL-g1F"/>
                                             <constraint firstItem="ccp-QS-CiA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yyp-wC-bU5" secondAttribute="bottom" constant="46" id="487-It-6PE"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5XJ-dY-1BV" secondAttribute="bottom" constant="46" id="AX6-N7-Q78"/>
                                             <constraint firstItem="SBt-83-mFj" firstAttribute="width" secondItem="Aiv-BJ-PJj" secondAttribute="width" multiplier="0.7" id="KoN-Eo-SvX"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ToA-WT-yAe" secondAttribute="bottom" constant="46" id="NG9-fc-daS"/>
                                             <constraint firstItem="a5t-4d-UW0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KE4-iv-OEo" secondAttribute="bottom" constant="46" id="Ncg-rY-ux0"/>
                                             <constraint firstItem="FG7-at-z7d" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yyp-wC-bU5" secondAttribute="bottom" constant="46" id="OQ0-3h-DWg"/>
+                                            <constraint firstItem="ToA-WT-yAe" firstAttribute="top" secondItem="ccp-QS-CiA" secondAttribute="bottom" constant="8" id="Q2A-dD-axK"/>
                                             <constraint firstItem="Yyp-wC-bU5" firstAttribute="top" secondItem="a5t-4d-UW0" secondAttribute="bottom" constant="5" id="SHl-jx-8nn"/>
                                             <constraint firstItem="T4C-DZ-dKu" firstAttribute="top" secondItem="Aiv-BJ-PJj" secondAttribute="top" constant="46" id="VIL-M1-KEu"/>
+                                            <constraint firstItem="ToA-WT-yAe" firstAttribute="leading" secondItem="5XJ-dY-1BV" secondAttribute="trailing" constant="10" id="aa5-KU-yBW"/>
                                             <constraint firstItem="ccp-QS-CiA" firstAttribute="leading" secondItem="FG7-at-z7d" secondAttribute="trailing" constant="5" id="d3K-tR-Xx1"/>
                                             <constraint firstItem="Yyp-wC-bU5" firstAttribute="width" secondItem="a5t-4d-UW0" secondAttribute="width" id="hJi-F3-j0w"/>
                                             <constraint firstItem="a5t-4d-UW0" firstAttribute="width" secondItem="SBt-83-mFj" secondAttribute="width" multiplier="0.404167" id="siL-f4-bJf"/>
                                             <constraint firstItem="SBt-83-mFj" firstAttribute="top" secondItem="T4C-DZ-dKu" secondAttribute="bottom" constant="8" id="t1N-LO-yaW"/>
+                                            <constraint firstItem="5XJ-dY-1BV" firstAttribute="top" secondItem="FG7-at-z7d" secondAttribute="bottom" constant="8" id="tow-A8-Yz9"/>
                                             <constraint firstItem="KE4-iv-OEo" firstAttribute="top" secondItem="SBt-83-mFj" secondAttribute="bottom" constant="8" id="wy5-ke-A9P"/>
                                         </constraints>
                                     </view>
