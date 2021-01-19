@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ooy-3P-kk8" userLabel="Root Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="551.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="572.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOL-kC-HdO">
                                                 <rect key="frame" x="112" y="0.0" width="190.5" height="41"/>
@@ -34,14 +34,14 @@
                                                     <constraint firstAttribute="width" secondItem="ga0-fo-9gf" secondAttribute="height" multiplier="1:1" id="a3U-hx-Jk0"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오토레이아웃 공부하는거 어려운데 재밌는데 어렵고 지금 나는 졸리고 하지만 화이팅. 다들 화이팅해요!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-Ng-LH1">
-                                                <rect key="frame" x="12.5" y="347" width="389.5" height="40.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오토레이아웃 공부하는거 어려운데 재밌는데 어렵고 지금 나는 졸리고 하지만 화이팅. 다들 화이팅해요!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-Ng-LH1">
+                                                <rect key="frame" x="62" y="347" width="290" height="61.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-Gg-guJ" userLabel="TextField Stack View">
-                                                <rect key="frame" x="62" y="395.5" width="290" height="76"/>
+                                                <rect key="frame" x="62" y="416.5" width="290" height="76"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7A-Uz-DXe">
                                                         <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
@@ -56,7 +56,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OOB-Vg-oRG" userLabel="Switch &amp; Label Stack View">
-                                                <rect key="frame" x="114.5" y="479.5" width="185.5" height="31"/>
+                                                <rect key="frame" x="114.5" y="500.5" width="185.5" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYr-mt-c9g">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -70,7 +70,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WE4-66-6f3" userLabel="Button Stack View">
-                                                <rect key="frame" x="132" y="518.5" width="150" height="33"/>
+                                                <rect key="frame" x="132" y="539.5" width="150" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-pT-9Sw">
                                                         <rect key="frame" x="0.0" y="0.0" width="67" height="33"/>
@@ -86,6 +86,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="Jjo-Ng-LH1" firstAttribute="width" secondItem="ga0-fo-9gf" secondAttribute="width" id="5uR-Xz-Ca0"/>
                                             <constraint firstItem="cEs-Gg-guJ" firstAttribute="width" secondItem="ga0-fo-9gf" secondAttribute="width" id="XzK-Dn-Jyk"/>
                                         </constraints>
                                     </stackView>
