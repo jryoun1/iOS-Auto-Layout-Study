@@ -28,10 +28,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="memoticon" translatesAutoresizingMaskIntoConstraints="NO" id="SBt-83-mFj">
+                                                <rect key="frame" x="75" y="94.666666666666657" width="240" height="273"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SBt-83-mFj" secondAttribute="height" multiplier="1:1" id="fD0-FO-dmx"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="SBt-83-mFj" firstAttribute="width" secondItem="Aiv-BJ-PJj" secondAttribute="width" multiplier="0.7" id="KoN-Eo-SvX"/>
                                             <constraint firstItem="T4C-DZ-dKu" firstAttribute="top" secondItem="Aiv-BJ-PJj" secondAttribute="top" constant="46" id="VIL-M1-KEu"/>
+                                            <constraint firstItem="SBt-83-mFj" firstAttribute="top" secondItem="T4C-DZ-dKu" secondAttribute="bottom" constant="8" id="t1N-LO-yaW"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -62,6 +70,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="memoticon" width="140.33332824707031" height="140.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
