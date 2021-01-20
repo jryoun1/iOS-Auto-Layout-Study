@@ -137,6 +137,10 @@
                             <constraint firstItem="yGq-G6-JZc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nwn-U3-wFq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="hsG-pT-9Sw" collectionClass="NSMutableArray" id="pay-cx-We7"/>
+                        <outletCollection property="buttons" destination="hjt-GA-w16" collectionClass="NSMutableArray" id="osQ-3d-YM5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
