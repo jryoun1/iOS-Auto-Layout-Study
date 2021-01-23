@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260B2D9325B7F2F2009E529D /* StudyDrawByStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260B2D9225B7F2F2009E529D /* StudyDrawByStoryboard.swift */; };
 		26F6C46F2593029E00F7F27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C46E2593029E00F7F27A /* AppDelegate.swift */; };
 		26F6C4712593029E00F7F27A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C4702593029E00F7F27A /* SceneDelegate.swift */; };
 		26F6C4732593029E00F7F27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C4722593029E00F7F27A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260B2D9225B7F2F2009E529D /* StudyDrawByStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDrawByStoryboard.swift; sourceTree = "<group>"; };
 		26F6C46B2593029E00F7F27A /* AutoLayoutStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F6C46E2593029E00F7F27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26F6C4702593029E00F7F27A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				26F6C46E2593029E00F7F27A /* AppDelegate.swift */,
 				26F6C4702593029E00F7F27A /* SceneDelegate.swift */,
 				26F6C4722593029E00F7F27A /* ViewController.swift */,
+				260B2D9225B7F2F2009E529D /* StudyDrawByStoryboard.swift */,
 				26F6C4742593029E00F7F27A /* Main.storyboard */,
 				26F6C477259302A000F7F27A /* Assets.xcassets */,
 				26F6C479259302A000F7F27A /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F6C4732593029E00F7F27A /* ViewController.swift in Sources */,
+				260B2D9325B7F2F2009E529D /* StudyDrawByStoryboard.swift in Sources */,
 				26F6C46F2593029E00F7F27A /* AppDelegate.swift in Sources */,
 				26F6C4712593029E00F7F27A /* SceneDelegate.swift in Sources */,
 			);

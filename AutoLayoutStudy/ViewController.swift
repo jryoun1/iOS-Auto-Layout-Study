@@ -108,6 +108,7 @@ class ViewController: UIViewController {
     private func setUpImageView() {
         loginImageView.translatesAutoresizingMaskIntoConstraints = false
         loginImageView.image = UIImage(named: "Image")
+        loginImageView.contentMode = .scaleAspectFit
         
         NSLayoutConstraint.activate([
             loginImageView.widthAnchor.constraint(equalTo: totalStackView.widthAnchor, multiplier: 0.7),
