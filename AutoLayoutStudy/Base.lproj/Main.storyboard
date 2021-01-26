@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L8-Rj-Wxl">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L8-Rj-Wxl">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hsN-oJ-j1u">
@@ -172,7 +172,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="hsN-oJ-j1u" secondAttribute="bottom" id="Ja1-E7-R8R"/>
-                                    <constraint firstItem="hsN-oJ-j1u" firstAttribute="width" secondItem="f1i-Da-Mh3" secondAttribute="width" id="gjE-6P-oEX"/>
+                                    <constraint firstItem="hsN-oJ-j1u" firstAttribute="width" secondItem="LDR-nK-YRZ" secondAttribute="width" id="gjE-6P-oEX"/>
                                     <constraint firstItem="hsN-oJ-j1u" firstAttribute="leading" secondItem="f1i-Da-Mh3" secondAttribute="leading" id="gvg-EC-fG4"/>
                                     <constraint firstItem="hsN-oJ-j1u" firstAttribute="top" secondItem="9L8-Rj-Wxl" secondAttribute="top" id="rs3-3X-yFt"/>
                                     <constraint firstItem="hsN-oJ-j1u" firstAttribute="trailing" secondItem="f1i-Da-Mh3" secondAttribute="trailing" id="tCk-92-K1d"/>
