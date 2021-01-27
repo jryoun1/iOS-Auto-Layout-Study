@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var buttons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustButtonDynamicType), name: UIContentSizeCategory.didChangeNotification, object: nil)
     }
 
+    @objc func adjustButtonDynamicType() {
+        buttons.forEach{ (button) in
+            button.titleLabel?.adjustsFontForContentSizeCategory = true
+        }
+    }
 
 }
 
